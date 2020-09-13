@@ -24,7 +24,26 @@
 </head>
 <body>
 hfhfjhkhkdkjkjksjksjk
+<p>
+  Enter first number:
+  <input type="number" id="txt1" name="text1">
+  Enter second number:
+  <input type="number" id="txt2" name="text2">
+</p>
+<p>
+  Click the button to calculate add of both .
+  <button onclick="myFunction()">Add </button>
+</p>
+<p id="demo"></p>
 
+<script>
+function myFunction() {
+  var y = document.getElementById("txt1").value;
+  var z = document.getElementById("txt2").value;
+  var x = Number(y)+Number(z);
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
